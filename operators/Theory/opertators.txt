@@ -1,0 +1,123 @@
+Bitwise Operators
+  "The operator that does not work on a numbers rather it works on bit by their symbols it is called BitWise Operator."
+
+  Symbol:-
+  
+    And --> &
+    or  --> |
+    not --> !
+    xor --> ^
+    
+    
+    AND operator(&):-
+      And Truth table:
+      (Input)  (Output)
+        x  y     z
+        0  0     0
+        1  0     0
+        0  1     0
+        1  1     1
+        
+        For Example:- 
+        1) a = 2 --> 10
+           b = 3 --> 11
+           
+           c = 2 --> 10
+           
+        2) a = 5 --> 101
+           b = 7 --> 111
+           
+           c = 5 --> 101
+           
+      Or Operator(|):-
+        Or Truth table:-
+          (Input) (Output)
+            x   y    z
+            0   0    0
+            1   0    1
+            0   1    1
+            1   1    1
+            
+            for example:- 
+            1)  a = 2 --> 010
+                b = 4 --> 100
+                c = 6 --> 110
+                
+            2)  a = 3 --> 011
+                b = 6 --> 110
+                c = 7 --> 111
+      
+      Nor Operator(~):-
+        Nor Truth table:-
+          (Input)  (Output)
+           x         z
+           1         0
+           0         1
+           
+           For Example:-
+           1) a = 2 --> 10 (No my brother we have to check how much bits of integer is, For this case i will take it as 4-bytes)
+           
+           then a = 2 --> 000.......0010
+            c = ~a --> 11111....01, 
+            Find is 1's and then find is 2's complement that is our answer. 
+            ~a = -3
+            
+      Xor Operator:-
+        Xor Truth table:-
+          (input)  (output)
+          x    y       z
+          0    0       0
+          1    0       1
+          0    1       1
+          1    1       0
+          
+         for Example:-
+          1) a = 2 , b = 4
+            find a^b = 010^100 = 110 --> 6
+            
+            
+            
+       Left Shift Operator.
+        "It basically shift bits towards left. "
+          Symbol (<<):-
+          
+           Working :-
+           
+            For Example:-
+              1) a = 4 --> 0100
+                b = a<<1 --> 1000 --> 8
+              
+              2) a = 3 --> 00011
+                b = a<<3 --> 11000 --> 24
+                
+               Note:- If you shift left it can make it negative number too.
+               
+
+                
+                
+        Right Shift Operator:-
+          "It make your bits shift towards right"
+          
+            Working:
+              For Example:
+                1) a = 5 --> 101
+                  b = a>>2 --> 001 --> 1
+                  
+                2) a = 5 --> 101
+                  b = a>>1 --> 010 --> 2
+                  
+                    
+                    
+           Overall logic of right shift and left shit we can say dived by 2 and multiply by 2 (roughly.)
+           For +ve number padding start with zero.
+           For -ve number padding start is complier dependent (ok).
+           
+           
+           Increment / Decrement operator;
+           
+            a++ (post increment) --> it will increment the value after the exceution. For Example :- if i = 4, a = i++; --> a = 4 and i = 5
+            ++a (pre increment) -->  it will increment the value before the exceution. For Example :- if i = 4, a = ++i; --> a = 5 and i = 5
+            --a (pre decrement) -->  it will increment the value after the exceution. For Example :- if i = 4, a = i--; --> a = 4 and i = 3
+            ++a (post decrement) --> it will increment the value before the exceution. For Example :- if i = 4, a = --i; --> a = 3 and i = 3
+            
+            
